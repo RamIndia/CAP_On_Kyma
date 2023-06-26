@@ -12,78 +12,92 @@ Make sure you're using the latest CAP tooling version.
 
 2. `cds version` to double check that the globally installed `@sap/cds-dk` version and your locally installed `@sap/cds` version match.
 
-Note: Make sure `cds version` is > 7.0!
+Note: Make sure cds version is > 7.0!
 
 ## Install kubectl
 
 ### macOS
-    1. To install kubectl, run the following command:
+1. To install kubectl, run the following command:
+    
     ```bash
     brew install kubectl
     ```
-    2. Check if the installation is successful:
+    
+2. Check if the installation is successful:
+    
     ```bash
     kubectl version --client
     ```
+    
     You should see a version number.
+    
 ### Windows
-    You can install kubectl using chocolatey.
-
-    1. To install kubectl, run the following command:
+You can install kubectl using chocolatey.
+1. To install kubectl, run the following command:
+    
     ```bash
     choco install kubernetes-cli
     ```
-    2. Check if the installation is successful:
+    
+2. Check if the installation is successful:
+    
     ```bash
     kubectl version --client
     ```
-    You should see something like:
-    `Client Version: version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.3", GitCommit:"1e11e4a2108024935ecfcb2912226cedeafd99df", GitTreeState:"clean", BuildDate:"2020-10-14T12:50:19Z", GoVersion:"go1.15.2", Compiler:"gc", Platform:"windows/amd64"}`
 
 ### Linux
-    Follow the instructions for your preferred way of installing kubectl at [Install and Set Up kubectl on Linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/).
+Follow the instructions for your preferred way of installing kubectl at [Install and Set Up kubectl on Linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/).
+
 ## Install helm
 
 There's a multitude of options to install helm. You can see the full list at [Installing Helm](https://helm.sh/docs/intro/install/). We have also listed some options:
 
 ### macOS
-    1. To install helm, run the following command:
+1. To install helm, run the following command:
+    
     ```bash
     brew install helm
     ```
-    2. Check if the installation is successful:
+    
+2. Check if the installation is successful:
+    
     ```bash
     helm version
     ```
+    
 ### Windows
-    You can install helm using chocolatey.
-
-    1. To install helm run the following command:
+You can install helm using chocolatey.
+1. To install helm run the following command:
+    
     ```bash
     choco install kubernetes-helm
     ```
-    2. Check if the installation is successful:
+2. Check if the installation is successful:
+   
     ```bash
     helm version
     ```
 
 ## Install Paketo (pack)
-
 Pack lets you build container images, which are collaboratively maintained making it easier to maintain and update.
-
 Install the [pack CLI](https://buildpacks.io/docs/tools/pack/#install).
 
 ### macOS
-    ```bash
-    brew install buildpacks/tap/pack
-    ```
+You can install pack using brew with the command:
+
+```bash
+brew install buildpacks/tap/pack
+```
+    
 ### Windows
-    You can install pack using chocolatey with the command:
-    ```bash
-    choco install pack
-    ```
+You can install pack using chocolatey with the command:
+
+ ```bash
+ choco install pack --version=0.29.0
+ ```
+    
 ### Linux
-    Follow the instructions to install the [pack CLI](https://buildpacks.io/docs/tools/pack/#install).
+Follow the instructions to install the [pack CLI](https://buildpacks.io/docs/tools/pack/#install).
 
 
 ## Install Docker Desktop
